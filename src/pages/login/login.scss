@@ -1,0 +1,88 @@
+@import "../../components/layout/layout.scss";
+
+@include themify($themes) {
+  .login {
+    overflow: auto;
+    height: 100vh;
+    background-color: themed("loginBg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: themed("textColor");
+
+    .card {
+      height: 75vh;
+      width: 60%;
+      min-height: 30em !important;
+      display: flex;
+      background-color: themed("bg");
+      border-radius: 10px;
+      justify-content: center;
+      overflow: hidden;
+      .left {
+        flex: 1;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(rgba(39, 11, 96, 0.5), rgba(39, 11, 96, 0.5)),
+          url("https://images.pexels.com/photos/18897882/pexels-photo-18897882/free-photo-of-man-standing-on-a-boat.jpeg"),
+          center;
+        background-size: cover;
+        padding: 3em;
+        gap: 1.5em;
+        color: white;
+        h1 {
+          font-size: 6rem;
+          line-height: 6rem;
+          margin: 0;
+        }
+        p {
+          margin: 0;
+        }
+        span {
+          font-size: 1rem;
+        }
+        button {
+          color: rebeccapurple;
+          border: none;
+          padding: 10px;
+          width: 50%;
+          background-color: white;
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+      .right {
+        justify-content: center;
+        flex: 1;
+        padding: 3em;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+        h1 {
+          color: #555;
+        }
+        form {
+          display: flex;
+          flex-direction: column;
+          gap: 2em;
+          input {
+            background-color: themed(input);
+            border: none;
+            border-bottom: 1px solid #555;
+            padding: 1.5em 0.6em;
+          }
+          button {
+            width: 50%;
+            padding: 1em;
+            border: none;
+            background-color: #938eef;
+            color: themed(textColor);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
