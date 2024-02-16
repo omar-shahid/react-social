@@ -61,11 +61,11 @@
             display: flex;
             align-items: center;
             gap: 0.7em;
+            cursor: pointer;
             button {
               border: none;
               padding: 0.5em;
-              color: themed("textColor");
-              cursor: pointer;
+              color: white;
               &:first-child {
                 background-color: slateblue;
               }
