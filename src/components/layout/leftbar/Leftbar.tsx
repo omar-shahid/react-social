@@ -20,7 +20,7 @@ function Leftbar() {
       <div className="container">
         <div className="menu">
           <div className="user">
-            <img src="https://images.pexels.com/photos/18128249/pexels-photo-18128249/free-photo-of-asphalt-road-at-sunset.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" />
+            <img src="https://images.pexels.com/photos/1077392/pexels-photo-1077392.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
             <span>John Doe</span>
           </div>
           <div className="item">

@@ -43,9 +43,15 @@
         outline: none;
         background-color: transparent;
         color: themed("textColor");
+        @include mobile {
+          display: none;
+        }
       }
     }
     .right {
+      @include mobile {
+        display: none;
+      }
       display: flex;
       align-items: center;
       gap: 1.2em;

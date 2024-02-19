@@ -7,7 +7,7 @@
     background-color: themed(bg);
     color: themed(textColor);
     .container {
-      padding: 10px;
+      padding: 1em;
       .user {
         display: flex;
         align-items: center;
@@ -34,7 +34,7 @@
         }
       }
       .content {
-        margin: 20px;
+        margin: 0.3em;
         img {
           object-fit: cover;
           width: 100%;

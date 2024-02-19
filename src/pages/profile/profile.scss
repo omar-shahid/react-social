@@ -1,0 +1,102 @@
+@import "../../components/layout/layout.scss";
+@include themify($themes) {
+  .profile {
+    background-color: themed(bgSoft);
+    .topSection {
+      width: 100%;
+      position: relative;
+      .cover {
+        height: 400px;
+        object-fit: cover;
+        width: 100%;
+        margin-bottom: 15em;
+      }
+
+      .profileContainer {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        padding: 0 50px;
+        .uInfo {
+          height: 180px;
+          box-shadow: 0 0 25 -10 rgba(0, 0, 0, 0.38);
+          -webkit-box-shadow: 0 0 25 -10 rgba(0, 0, 0, 0.38);
+          -moz-box-shadow: 0 0 25 -10 rgba(0, 0, 0, 0.38);
+          border-radius: 20px;
+          background-color: themed(bg);
+          color: themed(textColor);
+          padding: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .left {
+            flex: 2;
+            display: flex;
+            justify-content: start;
+            .profilePic {
+              width: 200px;
+              height: 200px;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+          }
+          .center {
+            flex: 5;
+            padding: 1.5em;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .options {
+              display: flex;
+              align-items: center;
+              justify-content: start;
+              span {
+                font-weight: 500;
+                font-size: 30px;
+              }
+            }
+            .info {
+              display: flex;
+              align-items: start;
+              flex-direction: column;
+              .item {
+                display: flex;
+                align-items: center;
+
+                color: themed(textColorSoft);
+                span {
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+          .right {
+            flex: 3;
+            display: flex;
+            align-items: start;
+            justify-content: flex-end;
+            gap: 10px;
+            &:last-child {
+              color: rebeccapurple;
+            }
+
+            button {
+              border: none;
+              font-size: 16px;
+              padding: 0.5em;
+              color: white;
+              cursor: pointer;
+              border-radius: 5px;
+              background-color: slateblue;
+            }
+          }
+        }
+      }
+    }
+  }
+  .posts {
+    padding: 0 25px;
+  }
+}
