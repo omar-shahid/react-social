@@ -44,7 +44,9 @@ function Post({ post }) {
             </button>
           </div>
           <div className="item">
-            <ShareOutlinedIcon /> Share
+            <button>
+              <ShareOutlinedIcon /> Share
+            </button>
           </div>
         </div>
         {commentOpen ? <Comments /> : null}

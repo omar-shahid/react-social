@@ -29,15 +29,14 @@
           center;
         background-size: cover;
         padding: 3em;
-        gap: 1.5em;
+        gap: 20px;
         color: white;
         h1 {
           font-size: 6rem;
-          line-height: 6rem;
-          margin: 0;
+          margin: 0 auto;
         }
         p {
-          margin: 0;
+          line-height: 20px;
         }
         span {
           font-size: 1rem;
@@ -46,7 +45,8 @@
           color: rebeccapurple;
           border: none;
           padding: 10px;
-          width: 50%;
+          width: 100px;
+          border-radius: 10px;
           background-color: white;
           font-weight: bold;
           cursor: pointer;
@@ -55,13 +55,13 @@
       .right {
         justify-content: center;
         flex: 1;
-        padding: 3em;
+        padding: 0 3em;
         width: 80%;
         display: flex;
         flex-direction: column;
-        gap: 3em;
+        // gap: 2em;
         h1 {
-          color: #555;
+          color: themed(textColorSoft);
         }
         form {
           display: flex;
@@ -74,11 +74,13 @@
             padding: 1.5em 0.6em;
           }
           button {
-            width: 50%;
+            width: 90px;
+            border-radius: 10px;
+            align-self: flex-end;
             padding: 1em;
             border: none;
             background-color: #938eef;
-            color: themed(textColor);
+            color: white;
             cursor: pointer;
           }
         }

@@ -37,6 +37,9 @@
       border-radius: 5px;
       padding: 5px;
       width: 50%;
+      @include mobile {
+        width: auto;
+      }
       input {
         width: 100%;
         border: none;
@@ -49,25 +52,24 @@
       }
     }
     .right {
-      @include mobile {
-        display: none;
-      }
       display: flex;
       align-items: center;
-      gap: 1.2em;
+      gap: 1.8em;
       .user {
         display: flex;
         align-items: center;
-        gap: 0.7em;
+        gap: 1em;
+        margin-right: 10px;
         font-weight: 500;
         img {
-          width: 1.8em;
-          height: 1.8em;
+          width: 40px;
+          height: 40px;
           border-radius: 50%;
           object-fit: cover;
         }
-        span {
-        }
+      }
+      @include mobile {
+        display: none;
       }
     }
   }

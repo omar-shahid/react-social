@@ -1,5 +1,10 @@
+@import "../layout/layout.scss";
+
 .posts {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  @include mobile{
+   padding: 10px;
+  }
 }

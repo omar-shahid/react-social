@@ -2,6 +2,7 @@
 
 @include themify($themes) {
   .comments {
+    margin: 20px 10px;
     img {
       width: 40px;
       height: 40px;
@@ -31,28 +32,28 @@
       }
     }
     .comment {
-      margin: 2em 0;
+      margin: 1em 0;
       display: flex;
       justify-content: center;
       gap: 20px;
       .info {
-        flex: 5;
+        flex: 3;
         display: flex;
         flex-direction: column;
-        gap: 3px;
+        gap: 2px;
         align-items: flex-start;
         span {
           font-weight: 500;
         }
+        .date {
+          align-self: flex-start;
+          color: gray;
+          font-size: 12px;
+        }
         p {
+          margin: 2px auto;
           color: themed(textColorSoft);
         }
-      }
-      .date {
-        flex: 1;
-        align-self: center;
-        color: gray;
-        font-size: 12px;
       }
     }
   }

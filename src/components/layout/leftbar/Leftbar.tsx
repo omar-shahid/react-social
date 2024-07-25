@@ -19,10 +19,6 @@ function Leftbar() {
     <div className="leftbar">
       <div className="container">
         <div className="menu">
-          <div className="user">
-            <img src="https://images.pexels.com/photos/1077392/pexels-photo-1077392.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
-            <span>John Doe</span>
-          </div>
           <div className="item">
             <img src={friends} alt="" />
             <span>Friends</span>
@@ -46,7 +42,6 @@ function Leftbar() {
         </div>
         <hr />
         <div className="menu">
-          <span>Your Shortcuts</span>
           <div className="item">
             <img src={events} alt="" />
             <span>Events</span>

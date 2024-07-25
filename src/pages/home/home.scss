@@ -4,5 +4,8 @@
   .home {
     color: themed("textColor");
     padding: 1.2em 4.5em;
+    @include mobile{
+      padding: 1.2em 0;
+    }
   }
 }

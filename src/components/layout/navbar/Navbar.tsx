@@ -17,7 +17,7 @@ function Navbar() {
     <div className="navbar">
       <div className="left">
         <Link to="/" style={{ textDecoration: "none" }}>
-          <span>React Social</span>
+          <span>Social Site</span>
         </Link>
         <HomeOutlinedIcon />
         <button onClick={toggle}>{darkmode ? <WbSunnyOutlinedIcon /> : <DarkModeOutlinedIcon />}</button>
@@ -33,7 +33,7 @@ function Navbar() {
         <NotificationsOutlinedIcon />
         <div className="user">
           <img src="https://images.pexels.com/photos/18128249/pexels-photo-18128249/free-photo-of-asphalt-road-at-sunset.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" />
-          <span>John Doe</span>
+          <span>Jason</span>
         </div>
       </div>
     </div>

@@ -2,6 +2,7 @@
 @include themify($themes) {
   .profile {
     background-color: themed(bgSoft);
+
     .topSection {
       width: 100%;
       position: relative;
@@ -9,44 +10,87 @@
         height: 400px;
         object-fit: cover;
         width: 100%;
-        margin-bottom: 15em;
+        margin-bottom: 9rem;
       }
 
       .profileContainer {
         position: absolute;
         left: 0;
         right: 0;
-        top: 50%;
-        padding: 0 50px;
+        top: 45%;
+        padding: 0 20px;
+        @include mobile {
+          top: 40%;
+        }
         .uInfo {
-          height: 180px;
           box-shadow: 0 0 25 -10 rgba(0, 0, 0, 0.38);
           -webkit-box-shadow: 0 0 25 -10 rgba(0, 0, 0, 0.38);
           -moz-box-shadow: 0 0 25 -10 rgba(0, 0, 0, 0.38);
           border-radius: 20px;
           background-color: themed(bg);
           color: themed(textColor);
-          padding: 50px;
+          padding: 30px;
           display: flex;
           align-items: center;
           justify-content: space-between;
+          @include mobile {
+            align-items: start;
+
+            flex-direction: column;
+            padding: 20px;
+          }
           .left {
             flex: 2;
+            width: 100%;
             display: flex;
             justify-content: start;
+            padding-bottom: 10px;
             .profilePic {
               width: 200px;
               height: 200px;
               border-radius: 50%;
               object-fit: cover;
+              @include mobile {
+                width: 100px;
+                height: 100px;
+              }
+            }
+            .mobilefollow {
+              display: none;
+              align-items: center;
+              justify-content: end;
+              width: 100%;
+              flex: 3;
+              gap: 10px;
+              @include mobile {
+                display: flex;
+              }
+
+              &:last-child {
+                color: rebeccapurple;
+              }
+
+              button {
+                border: none;
+                font-size: 16px;
+                padding: 0.5em;
+                color: white;
+                cursor: pointer;
+                border-radius: 5px;
+                background-color: slateblue;
+              }
             }
           }
           .center {
             flex: 5;
-            padding: 1.5em;
+            padding: 1em 0;
             display: flex;
             flex-direction: column;
             gap: 10px;
+            padding: 0 10px;
+            @include mobile {
+              gap: 0;
+            }
 
             .options {
               display: flex;
@@ -61,10 +105,15 @@
               display: flex;
               align-items: start;
               flex-direction: column;
+              gap: 5px;
+              @include mobile {
+                flex-direction: row;
+                margin-bottom: 10px;
+              }
               .item {
                 display: flex;
                 align-items: center;
-
+                gap: 5px;
                 color: themed(textColorSoft);
                 span {
                   font-size: 12px;
@@ -73,15 +122,20 @@
             }
           }
           .right {
-            flex: 3;
             display: flex;
             align-items: start;
-            justify-content: flex-end;
+            justify-content: end;
+            width: 100%;
+            flex: 3;
             gap: 10px;
+
             &:last-child {
               color: rebeccapurple;
             }
 
+            @include mobile {
+              display: none;
+            }
             button {
               border: none;
               font-size: 16px;
@@ -95,8 +149,8 @@
         }
       }
     }
-  }
-  .posts {
-    padding: 0 25px;
+    .posts {
+      padding: 0 10px;
+    }
   }
 }

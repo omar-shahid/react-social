@@ -10,6 +10,12 @@
     &::-webkit-scrollbar {
       display: none;
     }
+    @include mobile {
+      display: none;
+    }
+    @include tablet {
+      display: none;
+    }
     height: calc(100vh - 4.5em);
     .container {
       padding: 0.2em;
@@ -64,11 +70,11 @@
             cursor: pointer;
             button {
               border: none;
-              padding: 0.5em;
+              padding: 10px 15px;
               color: white;
-              border-radius: 5px;
+              border-radius: 10px;
               &:first-child {
-                background-color: slateblue;
+                background-color: #938eef;
               }
               &:last-child {
                 background-color: lightcoral;
@@ -77,6 +83,9 @@
           }
         }
       }
+    }
+    @include mobile {
+      display: none;
     }
   }
 }

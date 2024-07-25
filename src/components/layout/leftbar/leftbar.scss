@@ -11,6 +11,9 @@
     &::-webkit-scrollbar {
       display: none;
     }
+    @include mobile {
+      display: none;
+    }
     height: calc(100vh - 4.6em);
     .container {
       padding: 1.5em;
@@ -52,6 +55,9 @@
           }
         }
       }
+    }
+    @include mobile {
+      display: none;
     }
   }
 }

@@ -5,7 +5,7 @@ import { useContext } from "react";
 
 const Login = () => {
   const { setCurrentUserToken } = useContext(AuthContext);
-  function handleLogin(el) {
+  function handleLogin(el: { preventDefault: () => void; target: { [x: string]: { value: any } } }) {
     el.preventDefault();
     setCurrentUserToken(el.target["username"].value + el.target["password"].value);
   }
